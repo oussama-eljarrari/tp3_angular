@@ -1,0 +1,71 @@
+.stats-container {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 20px;
+  color: var(--text);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.stats-title {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin-bottom: 4px;
+}
+
+.stat-card {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 12px 16px;
+  text-align: center;
+  min-width: 100px;
+  border: 1px solid var(--border);
+}
+
+.stat-card .value {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.05;
+  color: var(--accent);
+}
+
+.stat-card .label {
+  font-size: 11px;
+  opacity: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+.barre-wrapper {
+  flex: 1;
+  min-width: 200px;
+}
+
+.barre-wrapper .barre-label {
+  font-size: 13px;
+  margin-bottom: 8px;
+  opacity: 0.9;
+  color: var(--muted);
+}
+
+.barre-bg {
+  background: #e5e7eb;
+  border-radius: 20px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.barre-fill {
+  height: 12px;
+  border-radius: 20px;
+  transition: width 0.6s ease;
+  background: var(--accent);
+}

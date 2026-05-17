@@ -1,0 +1,32 @@
+<div class="stats-container">
+  <div>
+    <div class="stats-title">📊 Statistiques</div>
+  </div>
+
+  <div class="stat-card">
+    <div class="value">{{ totalContacts }}</div>
+    <div class="label">Total</div>
+  </div>
+
+  <div class="stat-card">
+    <div class="value">{{ totalActifs }}</div>
+    <div class="label">Actifs</div>
+  </div>
+
+  <div class="stat-card">
+    <div class="value">{{ scoreMoyen }}/20</div>
+    <div class="label">Score moyen</div>
+  </div>
+
+  <div class="barre-wrapper">
+    <div class="barre-label">Taux d'activité : {{ tauxActivite }}%</div>
+    <div class="barre-bg">
+      <div class="barre-fill"
+        [ngStyle]="{
+          'width': tauxActivite + '%',
+          'background-color': couleurBarre
+        }">
+      </div>
+    </div>
+  </div>
+</div>

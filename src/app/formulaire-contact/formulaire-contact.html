@@ -1,0 +1,34 @@
+<div class="form-container">
+  <h3>➕ Ajouter un contact</h3>
+
+  <div class="form-grid">
+    <div class="form-row">
+      <label>Nom</label>
+      <input [(ngModel)]="nouveau.nom" placeholder="Nom complet" />
+    </div>
+    <div class="form-row">
+      <label>Email</label>
+      <input [(ngModel)]="nouveau.email" placeholder="email@exemple.com" />
+    </div>
+    <div class="form-row">
+      <label>Score (0–20)</label>
+      <input type="number" [(ngModel)]="nouveau.score" min="0" max="20" />
+    </div>
+    <div class="form-row">
+      <label>Rôle</label>
+      <select [(ngModel)]="nouveau.role">
+        <option value="admin">Admin</option>
+        <option value="user">Utilisateur</option>
+        <option value="guest">Visiteur</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-footer">
+    <div class="form-row checkbox-row">
+      <input type="checkbox" id="actif" [(ngModel)]="nouveau.actif" />
+      <label for="actif">Contact actif</label>
+    </div>
+    <button class="btn-add" (click)="ajouter()">✅ Ajouter</button>
+  </div>
+</div>
